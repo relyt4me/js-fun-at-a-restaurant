@@ -190,7 +190,7 @@ describe("order.js", function () {
     });
   });
 
-  describe.only("listOrders", function () {
+  describe("listOrders", function () {
     it("should be a function", function () {
       assert.isFunction(listItems);
     });

@@ -20,9 +20,20 @@ const listItems = (orderList) => {
   }, ``);
 };
 
+const searchOrder = (orderList, orderName) => {
+  if (
+    orderList.find((order) => {
+      return order.item === orderName;
+    })
+  ) {
+    return true;
+  }
+  return false;
+};
+
 module.exports = {
   takeOrder,
   refundOrder,
   listItems,
-  // searchOrder
+  searchOrder,
 };
