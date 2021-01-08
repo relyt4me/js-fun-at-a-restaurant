@@ -52,7 +52,7 @@ describe.only("Chef (class)", function () {
     assert.equal(casey.greetCustomer("Hannah", false), "Hello, Hannah!");
   });
 
-  it.skip("should confirm if a requested item is on the menu", function () {
+  it("should confirm if a requested item is on the menu", function () {
     var restaurant = createRestaurant("Average Bakery");
     var chef = new Chef("Hannah", restaurant);
 
@@ -69,7 +69,7 @@ describe.only("Chef (class)", function () {
     assert.equal(foodConfirmation, "Yes, we're serving Cinnamon Rolls today!");
   });
 
-  it.skip("should confirm if a different requested item is on the menu", function () {
+  it("should confirm if a different requested item is on the menu", function () {
     var restaurant = createRestaurant("Five Star Bakery");
     var chef = new Chef("Hannah", restaurant);
 
@@ -86,7 +86,7 @@ describe.only("Chef (class)", function () {
     assert.equal(foodConfirmation, "Yes, we're serving Tart Tatin today!");
   });
 
-  it.skip("should confirm if a requested item is not on the menu", function () {
+  it("should confirm if a requested item is not on the menu", function () {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Scott", restaurant);
 
@@ -101,7 +101,7 @@ describe.only("Chef (class)", function () {
     assert.equal(foodConfirmation, "Sorry, we aren't serving Quiche today.");
   });
 
-  it.skip("should confirm if a different requested item is not on the menu", function () {
+  it("should confirm if a different requested item is not on the menu", function () {
     var restaurant = createRestaurant("Best Bakery Ever");
     var chef = new Chef("Scott", restaurant);
 
