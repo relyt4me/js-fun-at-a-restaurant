@@ -39,7 +39,7 @@ describe("restaurant.js", function () {
     });
   });
 
-  describe.only("addMenuItem", function () {
+  describe("addMenuItem", function () {
     it("should be a function", function () {
       assert.isFunction(addMenuItem);
     });
