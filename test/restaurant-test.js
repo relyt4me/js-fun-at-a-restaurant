@@ -8,7 +8,7 @@ var {
 } = require("../src/restaurant");
 
 describe("restaurant.js", function () {
-  describe.only("createRestaurant", function () {
+  describe("createRestaurant", function () {
     it("should be a function", function () {
       assert.isFunction(createRestaurant);
     });
@@ -39,7 +39,7 @@ describe("restaurant.js", function () {
     });
   });
 
-  describe("addMenuItem", function () {
+  describe.only("addMenuItem", function () {
     it("should be a function", function () {
       assert.isFunction(addMenuItem);
     });
