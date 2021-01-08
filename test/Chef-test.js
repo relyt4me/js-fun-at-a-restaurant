@@ -30,21 +30,21 @@ describe.only("Chef (class)", function () {
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to work at a different restaurant", function () {
+  it("should be able to work at a different restaurant", function () {
     var restaurant = createRestaurant("Amazing Bakery");
     var chef = new Chef("Scott", restaurant);
 
     assert.deepEqual(chef.restaurant, restaurant);
   });
 
-  it.skip("should be able to greet a customer by name", function () {
+  it("should be able to greet a customer by name", function () {
     var scott = new Chef("Scott");
 
     assert.equal(scott.greetCustomer("Will"), "Hello, Will!");
     assert.equal(scott.greetCustomer("Pam"), "Hello, Pam!");
   });
 
-  it.skip("should greet a customer differently if it is morning", function () {
+  it("should greet a customer differently if it is morning", function () {
     var casey = new Chef("Casey");
 
     assert.equal(casey.greetCustomer("Scott"), "Hello, Scott!");
