@@ -118,7 +118,7 @@ describe("order.js", function () {
     });
   });
 
-  describe.only("refundOrder", function () {
+  describe("refundOrder", function () {
     it("should be a function", function () {
       assert.isFunction(refundOrder);
     });
@@ -190,7 +190,7 @@ describe("order.js", function () {
     });
   });
 
-  describe("listOrders", function () {
+  describe.only("listOrders", function () {
     it("should be a function", function () {
       assert.isFunction(listItems);
     });

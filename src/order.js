@@ -10,9 +10,19 @@ const refundOrder = (refundNumber, orderList) => {
   });
 };
 
+const listItems = (orderList) => {
+  return orderList.reduce((allItems, order) => {
+    if (allItems === ``) {
+      return `${order.item}`;
+    } else {
+      return `${allItems}, ${order.item}`;
+    }
+  }, ``);
+};
+
 module.exports = {
   takeOrder,
   refundOrder,
-  // listItems,
+  listItems,
   // searchOrder
 };
